@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Scoreboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-dark">
+
+  <header>
+    <div class="container-fluid">
+      <h1 class="row py-5 justify-content-center text-light quintessential">HOUSE POINTS</h1>
+    </div>
+  </header>
+
+  <main class="container-fluid text-light">
+    <!-- SECTION House Score Tracker -->
+    <section class="row justify-content-center">
+      <div class="col-2 m-3">
+        <div class="row">
+          <h3 class="p-3 text-center bg-info quintessential">Gryffindor</h3>
+        </div>
+        <div class="row card-1 m-0">
+          <div class="col-12">
+            <h5 class="text-center">Total Points</h5>
+            <div id="gryffindor-points" class="text-center">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 m-3">
+        <div class="row">
+          <h3 class="p-3 text-center bg-success quintessential">Slytherin</h3>
+        </div>
+        <div class="row card-1 m-0">
+          <div class="col-12">
+            <h5 class="text-center">Total Points</h5>
+            <div id="slytherin-points" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 m-3">
+        <div class="row">
+          <h3 class="p-3 text-center bg-danger quintessential">Ravenclaw</h3>
+        </div>
+        <div class="row card-1 m-0">
+          <div class="col-12">
+            <h5 class="text-center">Total Points</h5>
+            <div id="ravenclaw-points" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 m-3">
+        <div class="row">
+          <h3 class="p-3 text-center bg-warning quintessential">Hufflepuff</h3>
+        </div>
+        <div class="row card-1 m-0">
+          <div class="col-12">
+            <h5 class="text-center">Total Points</h5>
+            <div id="hufflepuff-points" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION Points Awarded -->
+    <div class="row justify-content-center align-content-center">
+      <div class="col-2 p-4">
+        <button id="your-points" class="btn btn-info col-12 p-3" onclick="pointAwardedG()">
+          <h4>+1</h4>
+        </button>
+      </div>
+      <div class="col-2 p-4">
+        <button id="your-points" class="btn btn-success col-12 p-3" onclick="pointAwardedS()">
+          <h4>+1</h4>
+        </button>
+      </div>
+      <div class="col-2 p-4">
+        <button id="your-points" class="btn btn-danger col-12 p-3" onclick="pointAwardedR()">
+          <h4>+1</h4>
+        </button>
+      </div>
+      <div class="col-2 p-4">
+        <button id="your-points" class="btn btn-warning col-12 p-3" onclick="pointAwardedH()">
+          <h4>+1</h4>
+        </button>
+      </div>
+    </div>
+
+    <!-- SECTION Points Removed -->
+    <div class="row justify-content-center">
+      <div class="col-2 p-4">
+        <button class="btn btn-info col-12 p-3" onclick="pointRemovedG()">
+          <h4>-1</h4>
+        </button>
+      </div>
+
+      <div class="col-2 p-4">
+        <button class="btn btn-success col-12 p-3" onclick="pointRemovedS()">
+          <h4>-1</h4>
+        </button>
+      </div>
+
+      <div class="col-2 p-4">
+        <button class="btn btn-danger col-12 p-3" onclick="pointRemovedR()">
+          <h4>-1</h4>
+        </button>
+      </div>
+
+      <div class="col-2 p-4">
+        <button class="btn btn-warning col-12 p-3" onclick="pointRemovedH()">
+          <h4>-1</h4>
+        </button>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script src="app.js">
+
+  </script>
+
+</body>
+
+</html>

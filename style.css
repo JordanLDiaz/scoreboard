@@ -1,0 +1,16 @@
+.quintessential {
+  font-family: 'Quintessential', cursive;
+}
+
+.card-1 {
+  border: 5px solid black;
+  justify-content: center;
+  min-height: 30vh;
+  background-color: gray;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/736x/63/4a/c7/634ac7e0c61c10226f8b8375ff18866a.jpg);
+  background-size: cover;
+  opacity: 0.9;
+}
